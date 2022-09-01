@@ -104,7 +104,10 @@ header p{
 
 #about div{
 max-width: 40vw;
+padding: 0 15px;
 }
+
+
 
 #projects{
   background-color: var(--white-background);
@@ -117,8 +120,8 @@ footer{
 footer p{
     margin: 0;
     color: #097BED;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .social-link{
@@ -184,12 +187,32 @@ padding-left: 24px;
 }
 
 @media (max-width: 767px){
+
+    h1{
+       font-size: 40px;
+    }
+    h2{
+        font-size: 25px;
+    }
     #about{
-        background-size: 20vw;
-        background-position: top center;;
+        background-size: 25vw;
+        background-position: top center;
     }
 
-    #about p{
-        margin-top: 25px;
+    #about h2{
+        margin-top: 80px;
+    }
+
+    #about div img{
+        padding: 0 10px;
+    }
+
+   .para-size{
+    max-width: 50ch;
+   }
+
+    footer p{
+        font-size: 1rem;
+
     }
 }
