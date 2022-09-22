@@ -78,6 +78,10 @@ nav ul li a:hover{
     color: var(--the-black);
 }
 
+.active-in-nav{
+    font-weight: bold;
+}
+
 header{
     text-align: center;
     padding: 60px 0;
@@ -142,6 +146,12 @@ footer p{
     border: none;
 }
 
+.button:hover{
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
 
 /* utilities */
 
@@ -179,12 +189,17 @@ padding-left: 24px;
 
 .flex-box{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;;
 }
 
 .flex-align{
     align-items: center;
 }
+
+.flex-3-col > *{
+    flex: 0 1 30%;
+}
+
 
 @media (max-width: 767px){
 
@@ -216,3 +231,110 @@ padding-left: 24px;
 
     }
 }
+
+
+/* Page Projects */
+
+.no-index-h1{
+    font-size: 40px;
+}
+
+.no-index-p{
+    font-size: 1.2rem;
+}
+
+.no-index-header{
+    padding: 50px 0;
+}
+
+.project-list-unstyled{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+h3{
+    font-size: 24px;
+}
+
+.project-cards{
+    background-color: var(--white-background);
+    border: 2px solid VAR(--the-grey);
+    border-radius: 10px;
+    margin-bottom: 2.5rem;
+
+}
+
+.project-cards h3 span{
+    font-size: 0.8em;
+    padding: 0.05em 0.25em;
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+}
+
+.img-div{
+    min-height: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+    background-position: center;
+
+}
+
+.content-div{
+    padding: 24px;
+}
+
+.project-button-1{
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--white-background);
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    border: none;
+    display: inline-block;
+    margin: 4px auto;
+    cursor: pointer;
+
+    
+}
+
+.project-button-1:hover{
+    background-color: transparent;
+    font-weight: medium;
+    color: #097BED;
+    border: 1px solid #097BED;;
+}
+
+.project-button-2{
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    background-color: var(--white-background);
+    color: var(--the-black);
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    border: 1px solid var(--the-black);
+    display: inline-block;
+    margin: 4px auto;
+}
+
+
+.project-button-2:hover{
+    color: #097BED;
+    border: 1px solid #097BED;
+}
+
+@media (max-width: 600px){
+
+    .project-cards{
+        flex-basis: 100%;
+        
+    }
+
+   
+}
+    
